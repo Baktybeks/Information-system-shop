@@ -27,12 +27,14 @@ const allSlice = createSlice({
         setCategories: (state, action) => {
             state.categories = action.payload
         },
+        setReview: (state, action) => {
+            state.review = action.payload
+        },
     }
 })
 
 export const {
     setUserProduct,
-    setSelectedCategory,
     setProducts,
     setProduct,
     setReview,
